@@ -1,0 +1,500 @@
+@font-face {
+font-family: 'San Francisco Text Regular';
+src: url('SFUIText-Regular.eot');
+src: url('SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+url('SFUIText-Regular.woff') format('woff'),
+url('SFUIText-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'San Francisco Text Bold';
+src: url('SFUIText-Bold.eot');
+src: url('SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+url('SFUIText-Bold.woff') format('woff'),
+url('SFUIText-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'San Francisco Text Semibold';
+src: url('SFUIText-Semibold.eot');
+src: url('SFUIText-Semibold.eot?#iefix') format('embedded-opentype'),
+url('SFUIText-Semibold.woff') format('woff'),
+url('SFUIText-Semibold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.bold {
+	font-family: San Francisco Text Semibold, 'San Francisco Text Semibold', Sans-serif;
+	font-weight: 700;
+
+}
+
+body {
+	font-family: San Francisco Text Regular', 'San Francisco Text Regular';
+	
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(https://c1.staticflickr.com/5/4285/35238390255_b7955451bd_o.jpg);
+}
+
+nav {
+	background: #fafaf890;
+	width: 100vw;
+	height: 25px;
+	color: #4a4a48;
+	-webkit-box-shadow: 0px 0px 24.58px 3.42px #00000060;
+	        box-shadow: 0px 0px 24.58px 3.42px #00000060;
+}
+
+.search {
+	font-size: 80%;
+}
+
+.search-modal {
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 80%;
+	color: #867586;
+
+}
+
+#exampleModal .modal-body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.nav-item-start {
+	margin-left: 10px;
+}
+
+.nav-item-start-txt {
+	transition: all .05s linear;
+}
+
+.nav-item-start-txt:hover {
+	background-color: #2a8df8;
+	color: #fff;
+
+}
+
+.nav-item-end {
+	margin-right: 20px;
+}
+
+.nav-item-txt {
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	align-content: center;
+}
+
+.search-btn {
+	background-color: #ffffff00;
+	border-radius: 0;
+	border: 0;
+	
+	/*height: 7vh;*/
+}
+
+.search-btn:focus {
+	box-shadow: none;
+}
+
+nav .name-app {
+	padding-left: 8px;
+	padding-right: 4px;
+}
+
+nav .fa-apple {
+	font-size: 120%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.finderWindow .block {
+	display: block;
+}
+
+footer {
+	background-color: #ffffffb9;
+	height: 6vh;
+	border-radius: 5px 5px 0 0;
+}
+
+.search-finder {
+	background-color: #f6f6f6;
+	margin-right: 5px;
+	width: 25vw;
+	border-radius: 6px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	text-align:  center;
+}
+
+.search-finder input {
+	width: 10vw;
+}
+
+.footer-app-icon {
+	height: 6vh;
+	/*padding: 3px;*/
+	transition: all .2s linear ;
+	cursor: pointer;
+}
+
+.footer-app-icon:hover {
+	height: 8vh;
+	/*padding: 5px;*/
+}
+
+.footer-finder:hover + .footer-siri {
+	height: 7vh;
+}
+
+.footer-siri:hover + .footer-launcher {
+	height: 7vh;
+}
+
+.footer-launcher:hover + .footer-safari {
+	height: 7vh;
+}
+
+.footer-safari:hover + .footer-mail {
+	height: 7vh;
+}
+
+.footer-mail:hover + .footer-contacts {
+	height: 7vh;
+}
+
+.footer-contacts:hover + .footer-calendar {
+	height: 7vh;
+}
+
+.footer-calendar:hover + .footer-notes {
+	height: 7vh;
+}
+
+.footer-notes:hover + .footer-maps {
+	height: 7vh;
+}
+
+.footer-maps:hover + .footer-photos {
+	height: 7vh;
+}
+
+.footer-photos:hover + .footer-message {
+	height: 7vh;
+}
+
+.footer-message:hover + .footer-facetime {
+	height: 7vh;
+}
+
+.footer-facetime:hover + .footer-maps {
+	height: 7vh;
+}
+
+.footer-itunes:hover + .footer-ibooks {
+	height: 7vh;
+}
+
+.footer-ibooks:hover + .footer-appstore {
+	height: 7vh;
+}
+
+.footer-appstore:hover + .footer-settings {
+	height: 7vh;
+}
+
+.footer-settings:hover + .footer-appstore {
+	height: 7vh;
+}
+
+.footer-finder:hover + .footer-siri {
+	height: 7vh;
+}
+
+
+
+.footer-siri:hover + .footer-finder {
+	height: 7vh;
+}
+
+
+
+.footer-launcher:hover + .footer-siri {
+	height: 7vh;
+}
+
+.footer-safari:hover + .footer-mail {
+	height: 7vh;
+}
+
+.footer-mail:hover + .footer-safari {
+	height: 7vh;
+}
+
+.footer-contacts:hover + .footer-mail {
+	height: 7vh;
+}
+
+.footer-calendar:hover + .footer-contacts {
+	height: 7vh;
+}
+
+.footer-notes:hover + .footer-calendar {
+	height: 7vh;
+}
+
+.footer-maps:hover + .footer-notes {
+	height: 7vh;
+}
+
+.footer-photos:hover + .footer-maps {
+	height: 7vh;
+}
+
+.footer-message:hover + .footer-facetime {
+	height: 7vh;
+}
+
+.footer-facetime:hover + .footer-photos {
+	height: 7vh;
+}
+
+.footer-itunes:hover + .footer-facetime {
+	height: 7vh;
+}
+
+.footer-ibooks:hover + .footer-itunes {
+	height: 7vh;
+}
+
+.footer-appstore:hover + .footer-ibooks {
+	height: 7vh;
+}
+
+.footer-settings:hover + .footer-appstore {
+	height: 7vh;
+}
+
+.modal-body {
+	background-color: #e1dade;
+	/*height: 4vh;*/
+	padding: 0;
+	border-radius: 5px;
+	border: 0;
+	padding-left: 8px;
+	padding: 8px 0;
+}
+
+.modal {
+	background-color: #ffffff00;
+}
+
+input:focus {
+	outline: none;
+
+}
+
+input {
+	border: none;
+	background: none;
+	width: 100%;
+}
+
+.apple-menu {
+	background-color: #fafafad9;
+	width: 10vw;
+	border-radius: 0 0 4px 4px;
+	display: none;
+	/*background-color: #ffffff00;*/
+	opacity: 0;
+}
+
+.apple-menu-item {
+	margin-left: 10px;
+	opacity: 0;
+}
+
+.apple-menu-item:HOVER {
+	display: block;
+	opacity: 1;
+}
+
+.apple-nav:hover + .apple-menu  {
+	opacity: 1;
+}
+
+.apple-nav {
+	display: block;
+}
+
+.
+
+.aple:hover span {
+	opacity: 1;
+}
+
+.buttongroup-item {
+	background-color: #ff5f58;
+	padding: 0;
+	margin: 0;
+}
+
+.little {
+	background-color: #29cd42;
+}
+
+.bigger {
+	background-color: #ffbd2e;
+}
+
+.close {
+	background-color: #ffbd2e;
+	color: #ffffff00;
+}
+
+.btn {
+
+}
+
+.img-menu-hover {
+
+}
+
+.finderWindow {
+	/*position: absolute;*/
+	width: 90vw;
+	/*margin: 20px 10px 10px 20px;*/
+	background-color: #f6f6f6;
+	/*padding-right: 6px;*/
+}
+
+.none {
+	display: none;
+}
+
+.finderHeader {
+	background: linear-gradient(#eceaed, #d7d5d8);
+	height: 7vh;
+	
+}
+
+.fullScreen {
+	width: 99vw;
+	height: 100vh;
+	/*background: #000;*/
+	margin: 0;
+	padding: 0;
+}
+
+
+.close-menu {
+	width: 4vw;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+
+
+.close-menu-items  {
+	/*/*opacity: 0.1;*/
+	border-radius: 20px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+}
+
+.img-menu {
+	opacity: 0.1;
+}
+
+.img-menu:hover {
+	opacity: 1;
+	/*background-color: #fff;*/
+}
+
+.active {
+	display: none;
+}
+
+
+.close-menu-exit {
+	background-color: #fc605d;
+}
+
+.close-menu-plus {
+	background-color: #fac32e;
+}
+
+.close-menu-minus {
+	background-color: #3ac24e;
+}
+
+.bn-items {
+	background-color: #f5f5f5;
+	width: 30px;
+	height: 25px;
+	border-radius: 5px;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.bn-items:hover {
+	opacity: 1;
+}
+
+.bn-b {
+	margin-right: 2px;
+}
+
+.finder-header-down {
+	margin-bottom:  10px;
+}
+
+.bncontrols {
+	margin-left: 5px;
+
+}
+
+.finderWindow .btn {
+	background-color: #f5f5f5;
+	width: 30px;
+	height: 25px;
+	border-radius: 5px;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.finder-header-set {
+	width: 15vw;
+}
+
+.shadow {
+	box-shadow: 0 0 0 0 0 ;
+}
