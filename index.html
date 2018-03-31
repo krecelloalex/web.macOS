@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
-    
+    <script type="text/javascript" src="date_time.js"></script>    
 
     <title>MacOS</title>
   </head>
@@ -38,14 +38,35 @@
       </div>
 
       <div class="nav-item nav-item-end d-inline-flex align-content-center" >
-        <span class="nav-item-txt">Wed 5:00 PM</span>
+        <span class="nav-item-txt">
+            <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+        </span>
         
         <button type="button" class="btn nav-item-txt nav-item-start-txt search-btn" data-toggle="modal" data-target="#exampleModale">
           <span class="nav-item-txt nav-item-start-txt search"><i class="fas fa-search"></i></span>
         </button>
-        <span class="nav-item-txt "><i class="fas fa-bars"></i></span>
+        <span class="nav-item-txt nav-item-start-txt search pointer">
+          <img src="https://9to5mac.files.wordpress.com/2016/06/siri1.png" class="pointer" id="nav-siri" height="20px">
+        </span>
+        <span class="nav-item-txt nav-item-start-txt"><i class="fas fa-bars"></i></span>
       </div>
     </nav>
+
+    <div class="siriWindow flex-column align-content-end justify-content-between align-items-center none">
+      <div class="siri-close siri-lit align-self-start pointer">
+        <img src="img/finder icons/x.svg" class="pointer" height="10px" id="siri-closing">
+      </div>
+      <h3 class="siri-quest t-white">
+        What can I help you with?
+      </h3>
+      
+      <img src="https://cdn.dribbble.com/users/32512/screenshots/3546148/apple_siri_motion_animation_by_gleb.gif" width="120px" class="siri-gif">
+
+      <div class="siri-qwes siri-lit align-self-start pointer">
+        ?
+      </div>
+    </div>
 
 
 <!-- other -->
@@ -136,11 +157,34 @@
 
       </div>
     </header>
-    <aside class="finder-aside">
-      Favorites
-    </aside>
-    <div class="finder-footer">
-      content
+    <div class="finder-footer row">
+      <aside class="finder-footer-item finder-aside d-flex flex-column">
+        <h6 class="bold section-name">Favorites</h6>
+        <div class="sub-sections d-flex align-content-center align-items-center">
+          <img height="27px" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/imac/featured-content-airdrop-icon_2x.png">
+          <h5 class="sub-sections-name">AirDrop</h5>
+        </div>
+        <div class="sub-sections d-flex align-content-center align-items-center">
+          <img height="27px" src="https://support.apple.com/content/dam/edam/applecare/images/en_US/imac/featured-content-airdrop-icon_2x.png">
+          <h5 class="sub-sections-name">All files</h5>
+        </div>
+        <div class="sub-sections d-flex align-content-center align-items-center">
+          <img height="27px" src="img/appstore.jpg" class="appstore-finder-icon">
+          <h5 class="sub-sections-name">Applications</h5>
+        </div>
+        <div class="sub-sections d-flex align-content-center align-items-center">
+          <i class="fas fa-arrow-circle-down downloads-icon"></i>
+          <h5 class="sub-sections-name">Downloads</h5>
+        </div>
+        
+        
+        
+      </aside>
+      <div class="finder-footer-item finder-content d-flex" id="finder">
+        <iframe src="finder"  align="left">
+           
+        </iframe>
+      </div>
     </div>
   </div>
 
@@ -155,7 +199,7 @@
         <!-- </button> -->
 
         <!-- Siri -->
-        <img src="https://9to5mac.files.wordpress.com/2016/06/siri1.png" class="footer-app-icon footer-siri">
+        <img src="https://9to5mac.files.wordpress.com/2016/06/siri1.png" class="footer-app-icon footer-siri" id="footer-siri">
 
         <!-- Launcher -->
         <img src="https://i.pinimg.com/originals/95/1d/40/951d407ffbf1537b237fd31aac24f8e2.png" class="footer-app-icon footer-launcher">
@@ -229,7 +273,12 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   
+    <script type="text/javascript">
+     clock();
+    </script>
+
     <script src="jquery.arcticmodal-0.3.min.js"></script>
-    <script src="main.js"></script>
+    <!-- <script type="text/javascript" src="js/date.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
